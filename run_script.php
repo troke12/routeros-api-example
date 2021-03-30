@@ -11,7 +11,7 @@ $userhost = "nama_user";
 $pass = "troke_keren";
 
 if ($API->connect($iphost, $userhost, $pass)) {
-
+   //Thanks to https://forum.mikrotik.com/viewtopic.php?t=52477#p811860
    $API->write('/system/script/getall', false);
    $API->write('=.proplist=.id', false);
    $API->write('?name=testcode'); //disini nama scriptku adalah testcode
